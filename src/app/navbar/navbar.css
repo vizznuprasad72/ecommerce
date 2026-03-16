@@ -1,0 +1,34 @@
+
+.custom-navbar{
+    background: linear-gradient(90deg,#1e3c72,#2a5298);
+    padding: 12px 20px;
+}
+
+
+.custom-navbar .navbar-brand{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.custom-navbar .nav-link{
+    color: #f1f1f1;
+    font-size: 16px;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.custom-navbar .nav-link:hover{
+    color: #ffd700;
+}
+
+.custom-navbar .nav-link.active{
+    color: #ffd700;
+    font-weight: 600;
+}
+
+.navbar-toggler{
+    background-color: white;
+    border-radius: 5px;
+}

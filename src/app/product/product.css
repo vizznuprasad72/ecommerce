@@ -1,0 +1,29 @@
+
+.product-section{
+    background:#f8f9fb;
+    padding:60px 0;
+}
+
+
+.product-title{
+    font-size:34px;
+    font-weight:600;
+    margin-bottom:40px;
+    color:#222;
+}
+
+
+.product-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap:35px;
+}
+
+
+.product-grid app-card{
+    transition: all 0.3s ease;
+}
+
+.product-grid app-card:hover{
+    transform: translateY(-8px) scale(1.02);
+}

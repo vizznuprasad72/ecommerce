@@ -1,0 +1,13 @@
+<div class="product-section">
+  <div class="container">
+    
+    <h2 class="product-title text-center">Our Products</h2>
+
+    <div class="product-grid">
+      @for (item of products; track item.id) {
+        <app-card [product]="item"></app-card>
+      }
+    </div>
+
+  </div>
+</div>
