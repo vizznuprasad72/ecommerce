@@ -10,13 +10,15 @@ import { ChangeDetectorRef } from '@angular/core';
   styleUrl: './details.css',
 })
 export class Details {
-  product: any;
+  gadgets: any;
   id: number = 0;
   constructor(private api:ApiService,private cdr: ChangeDetectorRef,private route: ActivatedRoute) { }
   ngOnInit() {
     this.id = this.route.snapshot.params['id'];
     this.api.getproductbyid(this.id).subscribe((data: any) => {
-      this.product = data;
+      this.gadgets = data;
+      this.gadgets = this.gadgets.find((g: any) => g.id == this.id);
+      console.log(this.gadgets);
       this.cdr.detectChanges();
     });
   }

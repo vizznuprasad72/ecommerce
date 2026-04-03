@@ -10,11 +10,11 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class Product {
   
-  products: any[] = [];
+  gadgets: any[] = [];
   constructor(private apiservice: ApiService,private cdr : ChangeDetectorRef) { }
   ngOnInit() {
     this.apiservice.getproducts().subscribe((data : any) => {
-      this.products = data;
+      this.gadgets = data;
       this.cdr.detectChanges();
     });
   }

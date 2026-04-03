@@ -1,10 +1,10 @@
 <div class="card product-card">
-  <img src="{{ product.image }}" class="card-img-top" alt="{{ product.name }}">
+  <img src="{{ gadgets.image }}" class="card-img-top" alt="{{ gadgets.name }}">
   <div class="card-body">
-    <h5 class="card-title">{{ product.name }}</h5>
-    <p class="card-text">{{ product.description }}</p>
-    <p class="card-price">Only ${{ product.price }} </p>
+    <h5 class="card-title">{{ gadgets.name }}</h5>
+    <p class="card-text">{{ gadgets.description }}</p>
+    <p class="card-price">Only ${{ gadgets.price }} </p>
 
-    <button [routerLink]="['/product/details', product.id]" class="btn btn-primary btn-buy">buy Now</button>
+    <button [routerLink]="['/product/details', gadgets.id]" class="btn btn-primary btn-buy">buy Now</button>
   </div>
 </div>

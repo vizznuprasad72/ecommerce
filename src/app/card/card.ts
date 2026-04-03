@@ -8,5 +8,5 @@ import { RouterLink } from "@angular/router";
   styleUrl: './card.css',
 })
 export class Card {
-  @Input() product: any;
+  @Input() gadgets: any;
 }

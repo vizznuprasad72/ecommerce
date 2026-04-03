@@ -7,9 +7,10 @@ import { Injectable } from '@angular/core';
 export class ApiService {
   constructor(private http: HttpClient ) { }
   getproducts() {
-    return this.http.get('https://fakestoreapi.com/products');
+    return this.http.get('https://69cea5aa33a09f831b7dd21c.mockapi.io/api/watches/watches');
   }
   getproductbyid(id: number) {
-    return this.http.get(`https://fakestoreapi.com/products/${id}`);
+    return this.http.get(`https://69cea5aa33a09f831b7dd21c.mockapi.io/api/watches/watches`);
   }
 }
+
